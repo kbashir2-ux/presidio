@@ -5,15 +5,17 @@ from presidio_anonymizer.entities import RecognizerResult, OperatorConfig
 engine = AnonymizerEngine()
 
 # Define the input text
-text = "My name is Khadijah, Khadijah Bashir"
+text = "My name is Bashir, Khadijah Bashir"
 
-# Define the recognizer results
+# recognizer results (start and end positions)
 analyzer_results = [
-    RecognizerResult(entity_type="PERSON", start=11, end=19, score=0.8),   # "Khadijah"
-    RecognizerResult(entity_type="PERSON", start=21, end=33, score=0.8),   # "Khadijah Bashir"
+    RecognizerResult(entity_type="PERSON", start=11, end=17, score=0.8),  #
+    RecognizerResult(entity_type="PERSON", start=19, end=34, score=0.8),  #
 ]
 
-# Define the anonymization operator to replace with your GitHub username
+
+
+# Define the anonymization operator
 operators = {
     "PERSON": OperatorConfig("replace", {"new_value": "kbashir2-ux"})
 }
