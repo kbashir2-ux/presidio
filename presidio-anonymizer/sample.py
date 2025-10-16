@@ -9,6 +9,7 @@ engine = AnonymizerEngine()
 The input text should be "My name is <Your First Name>, <Your Full Name>."
 Example: "My name is Siyuan, Siyuan Jiang."
 '''
+'''
 text = "My name is Bashir, Khadijah Bashir."
 #text = "My name is Khadijah, Khadijah Bashir"
 
@@ -17,7 +18,15 @@ analyzer_results = [
     RecognizerResult(entity_type="PERSON", start=11, end=17, score=0.8),  #
     RecognizerResult(entity_type="PERSON", start=19, end=34, score=0.8),  #
 ]
+'''
+# Define the input text
+text = "My name is Khadijah, Khadijah Bashir."
 
+# recognizer results (start and end positions)
+analyzer_results = [
+    RecognizerResult(entity_type="PERSON", start=11, end=19, score=0.8),  # 
+    RecognizerResult(entity_type="PERSON", start=21, end=36, score=0.8),  # 
+]
 
 
 # Define the anonymization operator
