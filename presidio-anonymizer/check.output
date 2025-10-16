@@ -4,7 +4,7 @@ origin	git@github.com:kbashir2-ux/presidio.git (push)
 upstream	git@github.com:EMU-COSC381-Prep/presidio.git (fetch)
 upstream	git@github.com:EMU-COSC381-Prep/presidio.git (push)
 0
-text: My name is kbashir2-ux, kbashir2-ux
+text: My name is kbashir2-ux, kbashir2-ux.
 items:
 [
     {'start': 24, 'end': 35, 'entity_type': 'PERSON', 'text': 'kbashir2-ux', 'operator': 'replace'},

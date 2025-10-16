@@ -4,8 +4,13 @@ from presidio_anonymizer.entities import RecognizerResult, OperatorConfig
 # Initialize the anonymizer engine
 engine = AnonymizerEngine()
 
-# Define the input text
-text = "My name is Bashir, Khadijah Bashir"
+#input text
+'''
+The input text should be "My name is <Your First Name>, <Your Full Name>."
+Example: "My name is Siyuan, Siyuan Jiang."
+'''
+text = "My name is Bashir, Khadijah Bashir."
+#text = "My name is Khadijah, Khadijah Bashir"
 
 # recognizer results (start and end positions)
 analyzer_results = [
